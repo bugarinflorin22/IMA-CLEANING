@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <title>IMA Cleaning</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Acasa </a></li>
+            <li><a href="about.html"> Despre noi </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+            <a href="index.html">
+                <li><img src="images/logo.png"></li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <div class="slideshow-container">
+            <div class="mySlides one fade">
+                <br><br><br><br><br><br>
+                <div class="slidertext">
+                    <h1>Ești pregătit pentru servicii de calitate?</h1>
+                </div>
+                <div class="slidertext a">
+                    <a href="contact.html" style="text-decoration: none;">
+                        <p style="color: white;">Contactează-ne</p>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="serv">
+            <div class="title"> Curățenie rezidențială </div>
+            <div class="curatenierez">
+                <img src="images/currez.jpg" alt="da">
+                <hr style="width: 150px; margin: 15px auto 15px auto; box-shadow: white 0px 0px 1px 2px; border: none;">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure eius a ducimus expedita
+                    facilis voluptatibus harum aut rerum ipsam. Quas voluptas officiis repellat nobis qui corporis velit
+                    animi quidem.</p>
+            </div>
+        </div>
+
+        <div class="serv">
+            <div class="title dowt"> Curățenie comerciala </div>
+            <div class="curatenierez dow">
+                <img src="images/currez.jpg" alt="da">
+                <hr style="width: 150px; margin: 15px auto 15px auto; box-shadow: white 0px 0px 1px 2px; border: none;">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure eius a ducimus expedita
+                    facilis
+                    voluptatibus harum aut rerum ipsam. Quas voluptas officiis repellat nobis qui corporis velit animi
+                    quidem.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="areuready">
+        <h1>Ești gata să folosești serviciile noastre? </h1>
+        <h2>Urmează pașii de mai jos</h2>
+        <hr
+            style="width: 350px; margin: 15px auto 15px auto; box-shadow: rgb(116, 116, 116) 0px 0px 1px 2px; border: none;">
+        <div class="containeraur">
+            <div class="contleft">
+                <p class="tt">1. Contactează-ne </p>
+                <p class="ttz">Sună la numărul de telefon: 0731254212 sau trmite un e-mail.</p>
+            </div>
+
+            <div class="contright">
+                <p class="tt ds">2. Detalii</p>
+                <p class="ttz d">Oferă informațile necesare pentru a vă putea clasifica și programa.</p>
+            </div>
+
+            <div class="contleft">
+                <p class="tt">3. Preț </p>
+                <p class="ttz">Veți primi o ofertă de preț conform detaliilor oferite.</p>
+            </div>
+
+            <div class="contright">
+                <p class="tt ds">4. Bucurați-vă </p>
+                <p class="ttz d">Bucurați-vă de serviciile noastre și dacă te-am convis am fii foarte recunoscători dacă
+                    ne-ai recomanda.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2020 | imacleaning.ro</p>
+    </div>
+</body>
+<script>
+    var slideIndex = 0;
+    showSlidesautomatic(0);
+    function showSlidesautomatic(sw) {
+        if (sw == 0) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            showSlides(slideIndex);
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlidesautomatic, 15000, 0);
+        }
+    }
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+</script>
+
+</html>

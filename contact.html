@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <title>IMA Cleaning</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Acasa </a></li>
+            <li><a href="about.html"> Despre noi </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+            <a href="index.html">
+                <li><img src="images/logo.png"></li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="contact">
+        <div class="iconplus">
+            <div class="icons">
+                <a href="#"><i class="fab fa-facebook f"></i></a>
+            </div>
+            <div class="icons">
+                <i onclick="emailshow();" class="far fa-envelope m"></i>
+                <div id="emailshow" class="emailshowing">
+                    <p id="pshow">contact@imacleaning.ro</p>
+                </div>
+            </div>
+            <div class="icons">
+                <i onclick="phoneshow();" class="fas fa-phone-square p"></i>
+                <div id="phoneshow" class="emailshowing"
+                    style="font-size: 25px; transform: translateX(-20px) translateY(-10px);">
+                    <p id="pshow2" style="padding: 10px;">0738352252</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactform">
+            <div class="frame">
+                <input required placeholder="Nume">
+                <input required placeholder="Prenume">
+                <input required placeholder="E-mail">
+                <textarea required placeholder="Mesajul tau..."></textarea>
+                <button> Trimite </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Copyright © 2020 | imacleaning.ro</p>
+    </div>
+    <script src="js/about.js"></script>
+</body>
+
+</html>
